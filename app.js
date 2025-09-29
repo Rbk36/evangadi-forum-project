@@ -5,6 +5,9 @@ const PORT = 5500;
 const dbConn = require("./db/dbconfig");
 // user routes middleware
 const userRoutes = require("./routes/userRoute");
+
+// json middleware to get json data
+app.use(express.json());
 app.use("/api/users", userRoutes);
 
 // question routes middleware

@@ -13,4 +13,4 @@ db.execute("select 'test'", (err, result) => {
   else console.log(result);
 });
 
-module.exports = db;
+module.exports = db.promise();
