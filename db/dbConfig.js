@@ -1,10 +1,10 @@
 const mysql = require("mysql2");
 
 const db = mysql.createPool({
-  user: "evangadi-admin",
-  password: "1234",
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
   host: "localhost",
-  database: "evangadi_db",
+  database: process.env.DB_NAME,
   connectionLimit: 10,
 });
 
