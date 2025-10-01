@@ -81,7 +81,7 @@ async function login(req, res) {
     });
     return res
       .status(StatusCodes.OK)
-      .json({ msg: "user login successful", token });
+      .json({ msg: "user login successful", token, username });
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ msg: "Something went wrong" });
