@@ -1,7 +1,7 @@
 import Home from "../pages/Home";
 import { Route, Routes } from "react-router";
-import Register from "../pages/Register";
-import Login from "../pages/Login";
+import Register from "../pages/Register/Register";
+import Login from "../pages/Login/Login";
 import { axiosInstance } from "../utils/axios";
 import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router";

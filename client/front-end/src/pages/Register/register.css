@@ -1,0 +1,82 @@
+.outer_wrapper {
+  padding-top: 20px;
+  background-image: url("../../assets/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: -10px -10px 30px -15px rgba(0, 123, 255, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings and links */
+form h3,
+form p {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+form span {
+  color: orange;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Input fields */
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* First and Last name side by side */
+.first-last {
+  display: flex;
+  gap: 1rem;
+}
+
+.first-last input {
+  flex: 1;
+}
+
+/* password show-hide icon styling */
+.input_with_icon {
+  position: relative;
+  width: 100%;
+}
+.eye_icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.agree span {
+  text-decoration: underline;
+}
+/* Button styling */
+button {
+  padding: 16px 34px;
+  background-color: rgb(55, 55, 206);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(40, 40, 180);
+}

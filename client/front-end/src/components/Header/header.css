@@ -1,0 +1,27 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo img {
+  height: 50px; /* adjust as needed */
+}
+
+.nav_links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_links li {
+  list-style: none;
+  padding: 15px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}

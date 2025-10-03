@@ -1,0 +1,166 @@
+/* section wrapper*/
+.aboutLogin-wrapper {
+  background-image: url("../../assets/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* outer login container */
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* form styling */
+.login_container_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding-bottom: 100px;
+}
+
+/*about page styling */
+.about_page_outer_container {
+  margin-top: 3.5rem;
+  float: right;
+  width: 50%;
+}
+.inner_container {
+  padding: 0px 150px 0 0;
+}
+.about a {
+  color: #ec9a67;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 17px;
+}
+.title {
+  font-weight: lighter;
+  color: #554164;
+}
+.content p {
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #414b6e;
+}
+.work a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fe8302;
+  color: #ffe1a3;
+  line-height: 1;
+  padding: 7px 15px;
+  margin: 0;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* centering the two texts above the form */
+.login_container_form h3,
+.login_container_form > p {
+  text-align: center;
+}
+
+/* input fields */
+.login_container_form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* forgot password */
+.orange {
+  color: orange;
+  text-align: right;
+  margin-top: 0.5rem;
+  padding-left: 20rem;
+}
+
+/* button styling */
+button {
+  padding: 16px 34px;
+  background-color: rgb(55, 55, 206);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(40, 40, 180);
+}
+
+/* link styling */
+.login_container span {
+  color: orange;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login_container_form p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* password show-hide icon styling */
+.input_with_icon {
+  position: relative;
+  width: 100%;
+}
+.eye_icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: -8px;
+}
+
+/* responsive design */
+
+@media (max-width: 768px) {
+  .about_page_outer_container,
+  .login_container {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  .inner_container {
+    padding: 20px;
+  }
+
+  .login_container_form {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    /* margin: 0 1rem; */
+  }
+
+  .orange {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .login_container_form p {
+    font-size: 16px;
+  }
+}
